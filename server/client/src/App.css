@@ -1,0 +1,639 @@
+.App {
+  background-color: #222222;
+}
+/* First Row */
+.color-white {
+  color: white;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+.color_gray {
+  color: white;
+  font-size: 2vw; /* Adjust the font size relative to viewport width */
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  /* text-align: center;  */
+}
+.btn41-43 {
+  padding: 1vw 2vw; /* Adjust padding using vw units */
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 1px solid aqua;
+  z-index: 1;
+  color: aqua;
+  font-size: 1em; /* Adjust font size using em units */
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: aqua;
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 0.2em; /* Adjust top using em units */
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(2deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(-2deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hover-effect {
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.hover-effect:hover {
+  /* Change to your desired hover color */
+  animation: shake 0.5s ease-in-out;
+  background: linear-gradient(45deg, #00ffff, #00ffff),
+    -webkit-linear-gradient(right, #d61a5e, #ff8c05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.centered_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dream_quote {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.dreams {
+  color: lightgoldenrodyellow;
+}
+.setSize {
+  color: lightblue;
+}
+.bracket {
+  color: palevioletred;
+}
+.BIG {
+  color: #8d8d8d;
+}
+/* Second Row */
+.fontwhite {
+  color: white;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-lr; /* Sets vertical writing mode, you can also use vertical-rl for the opposite direction */
+  text-orientation: mixed; /* Controls the orientation of the characters in vertical writing mode */
+  animation: moveUpDown 2s ease-in-out infinite;
+  margin: 10px 0;
+}
+/* Third Row */
+.headings {
+  /* background: linear-gradient(45deg, #d61a5e, #ff8c05); */
+  -webkit-background-clip: text;
+  color: aqua;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+.project-font {
+  color: #8d8d8d;
+  text-align: justify;
+}
+
+/* TypingText.css */
+
+.type-text-body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* background-color: #000; */
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+.blink {
+  animation: blink ease 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* Fourth Row */
+
+.card-container {
+  background-color: #112240 !important;
+}
+.card-title {
+  color: #08fdd8 !important;
+}
+.hover-effect2:hover {
+  transform: scale(1.05); /* Pop-up effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Increase box shadow on hover */
+  transition: transform 0.7s ease-in-out, box-shadow 0.7s ease-in-out; /* Add smooth transition effect */
+}
+.skills {
+  color: #8d8d8d;
+}
+.social_links {
+  margin-left: 20px;
+}
+.about_content {
+  text-align: justify;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+/* Fifth Row */
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.skills1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 400px;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.each {
+  background: #8d8d8d;
+  /* box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
+    inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
+    -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2); */
+  transition: box-shadow 0.2s ease-in-out;
+  height: 190px;
+  width: 190px;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 5px solid #eaeef5; */
+}
+
+.skills1:hover .each {
+  box-shadow: inset 4px 4px 7px rgba(55, 84, 170, 0.15),
+    inset -4px -4px 10px white, 0px 0px 2px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.each .box {
+  padding: 16px;
+}
+
+.css .box {
+  text-align: right;
+}
+
+.js .box {
+  margin-top: 40px;
+}
+
+.ng .box {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.each .box .content h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.each .box .content p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.html .box .content i {
+  margin-top: 40px;
+}
+
+.css .box .content i {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.js .box .content i {
+  margin-bottom: 20px;
+}
+
+.ng .box .content i {
+  margin-bottom: 20px;
+}
+
+.each .box .content i {
+  font-size: 30px;
+}
+
+.center {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  background: #8d8d8d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-radius: 108px;
+  /* box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
+    inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
+    -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2); */
+  transition: box-shadow 0.2s ease-in-out;
+  border: 10px solid aqua;
+}
+
+.center .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .skills1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  .each {
+    height: 150px;
+    width: 150px;
+  }
+
+  .mern_stack > h2 {
+    margin: 0 !important;
+    text-align: center;
+  }
+  .content_nem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -40px !important;
+  }
+  .sm_icons_nm {
+    margin-right: -59px;
+  }
+  .location_content {
+    font-size: 12px;
+  }
+  .color-white {
+    font-size: 40px !important;
+  }
+  .color_gray1 {
+    font-size: 20px !important;
+    margin-bottom: -25px;
+  }
+}
+/* Fifth Row */
+.contact_body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /*     background: linear-gradient(#141e30, #243b55); */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  padding: 40px;
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #8d8d8d;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box textarea:focus ~ label,
+.user-box input:valid ~ label,
+.user-box textarea:valid ~ label {
+  top: -20px; /* Adjust the position when in focus or has content */
+  font-size: 12px; /* Adjust the font size when in focus or has content */
+  color: aqua;
+  background-color: transparent !important;
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #222222 inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 5px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .login-box {
+    width: 80%; /* Adjust the width of the form for smaller screens */
+    margin: 0 auto; /* Center the form on smaller screens */
+  }
+
+  .login-box .user-box input,
+  .login-box .user-box textarea {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+    width: 100%; /* Make input fields and textarea full width on smaller screens */
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+
+  .login-box .user-box textarea {
+    cols: 100%; /* Adjust the number of columns for textarea */
+  }
+
+  .login-box form a {
+    font-size: 14px; /* Adjust the font size of the button for smaller screens */
+  }
+}
+
+.button {
+  background-color: aqua !important;
+  color: #222222 !important;
+  font-weight: bolder;
+}
+
+.svg1 {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  max-height: 100%;
+}
+
+#Welcome {
+  animation: paint 0.5s ease forwards 3s;
+}
+
+.letter:nth-of-type(1) {
+  stroke-dasharray: 815;
+  stroke-dashoffset: 815;
+  animation: draw 2s ease forwards;
+}
+
+.letter:nth-of-type(2) {
+  stroke-dasharray: 495;
+  stroke-dashoffset: 495;
+  animation: draw 2s ease forwards 0.2s;
+}
+
+.letter:nth-of-type(3) {
+  stroke-dasharray: 234;
+  stroke-dashoffset: 234;
+  animation: draw 2s ease forwards 0.4s;
+}
+
+.letter:nth-of-type(4) {
+  stroke-dasharray: 355;
+  stroke-dashoffset: 355;
+  animation: draw 2s ease forwards 0.6s;
+}
+
+.letter:nth-of-type(5) {
+  stroke-dasharray: 427;
+  stroke-dashoffset: 427;
+  animation: draw 2s ease forwards 0.8s;
+}
+
+.letter:nth-of-type(6) {
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  animation: draw 2s ease forwards 1s;
+}
+
+.letter:nth-of-type(7) {
+  stroke-dasharray: 495;
+  stroke-dashoffset: 495;
+  animation: draw 2s ease forwards 1.2s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes paint {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
